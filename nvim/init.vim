@@ -20,6 +20,7 @@ Plug 'https://github.com/chrisbra/Colorizer.git'
 Plug 'https://github.com/tomasiser/vim-code-dark.git'
 Plug 'https://github.com/luochen1990/rainbow.git'
 Plug 'leissa/vim-acme'
+Plug 'https://github.com/rust-lang/rust.vim'
 
 call plug#end()
 ""}}}
@@ -230,10 +231,6 @@ nnoremap j gj
 nnoremap Q <nop>
 
 
-" }}}
-
-" Abbreviations Générales ------------ {{{
-iabbrev @@@ samuel.lorrain@gmail.com
 " }}}
 
 " Latex (et un peu .txt) ------------ {{{
