@@ -205,6 +205,7 @@ let g:rainbow_conf = {
 "quitte un mode avec ,,
 noremap ,, <esc>
 inoremap ,, <esc>
+inoremap <esc> <nop>
 "
 
 "ouvre et source vimrc
