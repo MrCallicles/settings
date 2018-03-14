@@ -94,7 +94,7 @@ set scrolloff=3 "laisse 3 lignes quand on scroll
 set virtualedit=block "cases virtuelles
 
 "A regler pour nux ou suivant le terminal
-colorscheme codedark "theme codedark
+colorscheme codedark
 
 highlight ColorColumn ctermbg=1
 call matchadd('ColorColumn', '\%81v', 100)

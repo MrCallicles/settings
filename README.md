@@ -1,2 +1,2 @@
 # settings
-Somes settings I use
+Some settings I use
