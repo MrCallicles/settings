@@ -228,8 +228,11 @@ vnoremap L $
 nnoremap k gk
 nnoremap j gj
 
-" supprimme l'appel automatique au mode "Ex"
+" supprime l'appel automatique au mode "Ex"
 nnoremap Q <nop>
+" supprime ZZ, ZQ etc.
+noremap ZZ <nop>
+noremap ZQ <nop>
 
 
 " }}}
