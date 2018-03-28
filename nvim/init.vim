@@ -7,21 +7,18 @@
 "" Ne pas oublier d'importer les vimfiles !
 " """"""""""" " Comportement Général " """"""""""" "
 
-
 " PlugManager --------------------- {{{
 "
 call plug#begin()
-
-Plug 'https://github.com/scrooloose/nerdtree.git'
-Plug 'https://github.com/Raimondi/delimitMate.git'
-Plug 'https://github.com/ntpeters/vim-better-whitespace.git'
-Plug 'https://github.com/godlygeek/tabular.git'
-Plug 'https://github.com/chrisbra/Colorizer.git'
-Plug 'https://github.com/tomasiser/vim-code-dark.git'
-Plug 'https://github.com/luochen1990/rainbow.git'
-Plug 'leissa/vim-acme'
-Plug 'https://github.com/rust-lang/rust.vim'
-
+    Plug 'https://github.com/scrooloose/nerdtree.git'
+    Plug 'https://github.com/Raimondi/delimitMate.git'
+    Plug 'https://github.com/ntpeters/vim-better-whitespace.git'
+    Plug 'https://github.com/godlygeek/tabular.git'
+    Plug 'https://github.com/chrisbra/Colorizer.git'
+    Plug 'https://github.com/tomasiser/vim-code-dark.git'
+    Plug 'https://github.com/luochen1990/rainbow.git'
+    Plug 'https://github.com/leissa/vim-acme'
+    Plug 'https://github.com/rust-lang/rust.vim'
 call plug#end()
 ""}}}
 
@@ -159,7 +156,7 @@ set guifont=Meslo_LG_S_DZ:h12:b:cANSI
 " Permet de supprimer les espces en trop sur les lignes
 nnoremap <leader>fws :StripWhitespace<CR>
 " }}}
-"
+
 " Tabular ------------- {{{
 " Permet d'aligner facilement des tableaux
 "let g:tabular_loaded = 1
@@ -401,12 +398,27 @@ augroup markdown
 	autocmd BufNewFile,BufRead *.markdown inoremap >> »
 augroup END
 " }}}
-"
-" Assembledur -------- {{{
+
+" Assembleur -------- {{{
 
 augroup nasm
-autocmd!
-autocmd FileType asm setlocal ft=nasm
+    autocmd!
+    autocmd FileType asm setlocal ft=nasm
 augroup END
 
+" }}}o
+
+" Python -------- {{{
+augroup python
+    autocmd!
+    autocmd FileType python setlocal foldmethod=indent
+    autocmd FileType python setlocal foldlevel=99
+    autocmd FileType python setlocal tabstop=4
+    autocmd FileType python setlocal softtabstop=4
+    autocmd FileType python setlocal shiftwidth=4
+    autocmd FileType python setlocal textwidth=79
+    autocmd FileType python setlocal expandtab
+    autocmd FileType python setlocal autoindent
+    autocmd FileType python setlocal fileformat=unix
+augroup END
 " }}}o
