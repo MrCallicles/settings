@@ -19,6 +19,7 @@ call plug#begin()
     Plug 'https://github.com/luochen1990/rainbow.git'
     Plug 'https://github.com/leissa/vim-acme'
     Plug 'https://github.com/rust-lang/rust.vim'
+    Plug 'https://github.com/mattn/emmet-vim'
 call plug#end()
 ""}}}
 
