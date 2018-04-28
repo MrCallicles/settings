@@ -21,6 +21,7 @@ call plug#begin()
     Plug 'https://github.com/rust-lang/rust.vim'
     Plug 'https://github.com/neovimhaskell/haskell-vim.git'
     Plug 'https://github.com/mattn/emmet-vim'
+    Plug 'https://github.com/gko/vim-coloresque'
 call plug#end()
 ""}}}
 
