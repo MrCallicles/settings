@@ -409,7 +409,7 @@ augroup nasm
     autocmd FileType asm setlocal ft=nasm
 augroup END
 
-" }}}o
+" }}}
 
 " Python -------- {{{
 augroup python
@@ -424,4 +424,11 @@ augroup python
     autocmd FileType python setlocal autoindent
     autocmd FileType python setlocal fileformat=unix
 augroup END
-" }}}o
+" }}}
+
+" Vuejs ------- {{{
+augroup vuejs
+    autocmd!
+    autocmd BufNewFile,BufRead *.vue setlocal ft=html
+augroup END
+" }}}
