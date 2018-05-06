@@ -22,6 +22,10 @@ call plug#begin()
     Plug 'https://github.com/neovimhaskell/haskell-vim.git'
     Plug 'https://github.com/mattn/emmet-vim'
     Plug 'https://github.com/gko/vim-coloresque'
+    Plug 'https://github.com/hail2u/vim-css3-syntax'
+    Plug 'https://github.com/pangloss/vim-javascript'
+    Plug 'https://github.com/jesstelford/vim-js-pretty-template'
+    Plug 'https://github.com/styled-components/vim-styled-components'
 call plug#end()
 ""}}}
 
@@ -196,6 +200,13 @@ let g:rainbow_conf = {
 	\		'css': 0,
 	\	}
 	\}
+" }}}
+
+" Vim-css3-syntax -------------- {{{
+augroup VimCSS3Syntax
+    autocmd!
+    autocmd FileType css setlocal iskeyword+=-
+augroup END
 " }}}
 
 " """"""""""""
