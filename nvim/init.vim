@@ -26,6 +26,7 @@ call plug#begin()
     Plug 'https://github.com/pangloss/vim-javascript'
     Plug 'https://github.com/jesstelford/vim-js-pretty-template'
     Plug 'https://github.com/styled-components/vim-styled-components'
+    Plug 'https://github.com/lumiliet/vim-twig'
 call plug#end()
 ""}}}
 
